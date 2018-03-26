@@ -120,7 +120,7 @@
         //alert(this.img)
         //face++接口
         faceIn(base64).then(res =>{
-          /*if (res.data.status === 403) {
+          if (res.data.status === 403) {
             this.noticeContent = res.data.msg
             this.dialog = true
             this.clearShot()
@@ -129,12 +129,12 @@
             this.faceToken = res.data.face_token
             this.bind = true
             this.clearShot()
-          }*/
+          }
         })
         //阿里云接口
-        aliFaceIn(base64).then(res => {
+        /*aliFaceIn(base64).then(res => {
           //alert(res.data)
-          /*if (res.data.status === 403) {
+          /!*if (res.data.status === 403) {
             this.noticeContent = res.data.msg
             this.dialog = true
             this.clearShot()
@@ -143,10 +143,10 @@
             this.faceToken = res.data.face_token
             this.bind = true
             this.clearShot()
-          }*/
+          }*!/
         }).catch(error => {
           console.log(error)
-        })
+        })*/
       },
       screenShot() {
         this.video = document.getElementById("video")
